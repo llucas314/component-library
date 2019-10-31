@@ -1,6 +1,4 @@
-.cart {
-	background-image: url("./icons/cart_2.svg");
-}
-.like {
-	background-image: url("./icons/hearts.svg");
+img {
+	height: 10px;
+	padding: 0 6px 0 0;
 }
