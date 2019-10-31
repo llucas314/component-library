@@ -1,12 +1,14 @@
-// import React from "react";
+import React from "react";
+import "./Icon.css";
+import cart from "./icons/cart_2.svg";
+import like from "./icons/hearts.svg";
 
-// // function Icon(props) {
-// // 	let icons = ["cart", "like"];
-// // 	let classList = "";
-// // 	if (icons.includes(props.icon)) {
-// // 		classList = `${props.icon}`;
-// // 	}
-// // 	return <img
-// // }
+function Icon(props) {
+	if (props.icon === "cart") {
+		return <img src={cart} alt={props.icon}></img>;
+	} else if (props.icon === "like") {
+		return <img src={like} alt={props.icon}></img>;
+	} else return "";
+}
 
-// export default Icon;
+export default Icon;
