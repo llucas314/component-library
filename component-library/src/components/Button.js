@@ -3,7 +3,7 @@ import "./Button.css";
 // This is a functional component - just sent up a little differently as an arrow function!
 const Button = (props) => {
 	let classList = "";
-	let types = ["primary", "danger", "warning", "success"];
+	let types = ["primary", "danger", "warning", "success", "default"];
 	if (types.includes(props.type)) {
 		classList += ` button-${props.type}`;
 	}
@@ -13,7 +13,13 @@ const Button = (props) => {
 	if (props.outline) {
 		classList += " button-outline";
 	}
-	return <button className={`button-${classList}`}>Do Something</button>;
+	if (props.faded) {
+		classList += " button-faded";
+	}
+	if (props.red) {
+		classList += " button-red";
+	}
+	return <button className={classList}>Do Something</button>;
 };
 
 export default Button;

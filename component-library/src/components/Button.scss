@@ -1,5 +1,13 @@
 $blue: #33a0ff;
 $blue-hover: #2e90e5;
+$red: #ff4858;
+$red-hover: #f53848;
+$green: #0ad00a;
+$green-hover: #07c107;
+$yellow: #ffc600;
+$yellow-hover: #ebb600;
+$black: #22262a;
+$black-hover: #13161a;
 button {
 	color: white;
 	border-radius: 2px;
@@ -8,36 +16,99 @@ button {
 .button-primary {
 	background-color: $blue;
 	border: $blue;
+	&.button-outline {
+		background-color: transparent;
+		color: $blue;
+		border: 2px solid $blue;
+	}
+	&.button-faded {
+		background-color: rgba($color: $blue, $alpha: 0.1);
+		color: $blue;
+	}
 }
+
 .button-primary:hover {
 	background-color: $blue-hover;
 	border: $blue-hover;
 }
-.button-warning {
-	background-color: yellow;
-	border: yellow;
-	color: black;
-}
-.button-warning:hover {
-	background-color: rgb(228, 171, 13);
-	border: rgb(228, 171, 13);
-}
+
 .button-danger {
-	background-color: red;
-	border: red;
+	background-color: $red;
+	border: $red;
+	&.button-outline {
+		background-color: transparent;
+		color: $red;
+		border: 2px solid $red;
+	}
+	&.button-faded {
+		background-color: rgba($color: $red, $alpha: 0.1);
+		color: $red;
+	}
 }
+
 .button-danger:hover {
-	background-color: rgb(201, 15, 15);
-	border: rgb(201, 15, 15);
+	background-color: $red-hover;
+	border: $red-hover;
 }
+
 .button-success {
-	background-color: green;
-	border: green;
+	background-color: $green;
+	border: $green;
+	&.button-outline {
+		background-color: transparent;
+		color: $green;
+		border: 2px solid $green;
+	}
+	&.button-faded {
+		background-color: rgba($color: $green, $alpha: 0.1);
+		color: $green;
+	}
 }
+
 .button-success:hover {
-	background-color: rgb(3, 99, 3);
-	border: rgb(3, 99, 3);
+	background-color: $green-hover;
+	border: $green-hover;
 }
+
+.button-warning {
+	background-color: $yellow;
+	border: $yellow;
+	color: black;
+	&.button-outline {
+		background-color: transparent;
+		color: $yellow;
+		border: 2px solid $yellow;
+	}
+	&.button-faded {
+		background-color: rgba($color: $yellow, $alpha: 0.1);
+		color: $yellow;
+	}
+}
+
+.button-warning:hover {
+	background-color: $yellow-hover;
+	border: $yellow-hover;
+}
+
+.button-default {
+	background-color: $black;
+	border: $black;
+	&.button-outline {
+		background-color: transparent;
+		color: $black;
+		border: 2px solid $black;
+	}
+	&.button-faded {
+		background-color: rgba($color: $black, $alpha: 0.1);
+		color: $black;
+	}
+}
+
+.button-default:hover {
+	background-color: $black-hover;
+	border: $black-hover;
+}
+
 .button-large {
 	padding: 10px 50px;
 }

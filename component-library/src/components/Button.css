@@ -9,40 +9,105 @@ button {
   border: #33a0ff;
 }
 
+.button-primary.button-outline {
+  background-color: transparent;
+  color: #33a0ff;
+  border: 2px solid #33a0ff;
+}
+
+.button-primary.button-faded {
+  background-color: rgba(51, 160, 255, 0.1);
+  color: #33a0ff;
+}
+
 .button-primary:hover {
   background-color: #2e90e5;
   border: #2e90e5;
 }
 
-.button-warning {
-  background-color: yellow;
-  border: yellow;
-  color: black;
-}
-
-.button-warning:hover {
-  background-color: #e4ab0d;
-  border: #e4ab0d;
-}
-
 .button-danger {
-  background-color: red;
-  border: red;
+  background-color: #ff4858;
+  border: #ff4858;
+}
+
+.button-danger.button-outline {
+  background-color: transparent;
+  color: #ff4858;
+  border: 2px solid #ff4858;
+}
+
+.button-danger.button-faded {
+  background-color: rgba(255, 72, 88, 0.1);
+  color: #ff4858;
 }
 
 .button-danger:hover {
-  background-color: #c90f0f;
-  border: #c90f0f;
+  background-color: #f53848;
+  border: #f53848;
 }
 
 .button-success {
-  background-color: green;
-  border: green;
+  background-color: #0ad00a;
+  border: #0ad00a;
+}
+
+.button-success.button-outline {
+  background-color: transparent;
+  color: #0ad00a;
+  border: 2px solid #0ad00a;
+}
+
+.button-success.button-faded {
+  background-color: rgba(10, 208, 10, 0.1);
+  color: #0ad00a;
 }
 
 .button-success:hover {
-  background-color: #036303;
-  border: #036303;
+  background-color: #07c107;
+  border: #07c107;
+}
+
+.button-warning {
+  background-color: #ffc600;
+  border: #ffc600;
+  color: black;
+}
+
+.button-warning.button-outline {
+  background-color: transparent;
+  color: #ffc600;
+  border: 2px solid #ffc600;
+}
+
+.button-warning.button-faded {
+  background-color: rgba(255, 198, 0, 0.1);
+  color: #ffc600;
+}
+
+.button-warning:hover {
+  background-color: #ebb600;
+  border: #ebb600;
+}
+
+.button-default {
+  background-color: #22262a;
+  border: #22262a;
+}
+
+.button-default.button-outline {
+  background-color: transparent;
+  color: #22262a;
+  border: 2px solid #22262a;
+}
+
+.button-default.button-faded {
+  background-color: rgba(34, 38, 42, 0.1);
+  color: #22262a;
+}
+
+.button-default:hover {
+  background-color: #13161a;
+  border: #13161a;
 }
 
 .button-large {
