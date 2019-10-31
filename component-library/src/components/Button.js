@@ -13,7 +13,7 @@ const Button = (props) => {
 	if (props.outline) {
 		classList += " button-outline";
 	}
-	return <button className={`button-${classList}`}>{props.label}</button>;
+	return <button className={`button-${classList}`}>Do Something</button>;
 };
 
 export default Button;

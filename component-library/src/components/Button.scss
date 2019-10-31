@@ -1,15 +1,17 @@
+$blue: #33a0ff;
+$blue-hover: #2e90e5;
 button {
 	color: white;
 	border-radius: 2px;
 	padding: 5px 25px;
 }
 .button-primary {
-	background-color: #0069d9;
-	border: #0069d9;
+	background-color: $blue;
+	border: $blue;
 }
 .button-primary:hover {
-	background-color: #0265cf;
-	border: #0265cf;
+	background-color: $blue-hover;
+	border: $blue-hover;
 }
 .button-warning {
 	background-color: yellow;
@@ -38,7 +40,4 @@ button {
 }
 .button-large {
 	padding: 10px 50px;
-}
-.button-outline {
-	border: 2px solid rgb(219, 19, 19);
 }

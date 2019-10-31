@@ -3,42 +3,49 @@ button {
   border-radius: 2px;
   padding: 5px 25px;
 }
+
 .button-primary {
-  background-color: #0069d9;
-  border: #0069d9;
+  background-color: #33a0ff;
+  border: #33a0ff;
 }
+
 .button-primary:hover {
-  background-color: #0265cf;
-  border: #0265cf;
+  background-color: #2e90e5;
+  border: #2e90e5;
 }
+
 .button-warning {
   background-color: yellow;
   border: yellow;
   color: black;
 }
+
 .button-warning:hover {
-  background-color: rgb(228, 171, 13);
-  border: rgb(228, 171, 13);
+  background-color: #e4ab0d;
+  border: #e4ab0d;
 }
+
 .button-danger {
   background-color: red;
   border: red;
 }
+
 .button-danger:hover {
-  background-color: rgb(201, 15, 15);
-  border: rgb(201, 15, 15);
+  background-color: #c90f0f;
+  border: #c90f0f;
 }
+
 .button-success {
   background-color: green;
   border: green;
 }
+
 .button-success:hover {
-  background-color: rgb(3, 99, 3);
-  border: rgb(3, 99, 3);
+  background-color: #036303;
+  border: #036303;
 }
+
 .button-large {
   padding: 10px 50px;
 }
-.button-outline {
-  border: 2px solid rgb(219, 19, 19);
-}
+/*# sourceMappingURL=Button.css.map */
