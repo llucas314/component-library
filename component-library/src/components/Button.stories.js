@@ -84,4 +84,6 @@ storiesOf("Button", module)
 	.add("Large Default Faded", () => (
 		<Button type="default" label="Do something" faded large />
 	))
-	.add("Cart", () => <Button type="primary" label="Add To Cart" faded />);
+	.add("Cart", () => (
+		<Button icon="cart" type="primary" label="Add To Cart" faded />
+	));

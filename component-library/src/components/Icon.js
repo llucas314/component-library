@@ -6,7 +6,7 @@ function Icon(props) {
 	if (icons.includes(props.icon)) {
 		classList = `${props.icon}`;
 	}
-	return <div className={classList}></div>;
+	return <img 
 }
 
 export default Icon;

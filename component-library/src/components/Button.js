@@ -1,5 +1,6 @@
 import React from "react";
 import "./Button.css";
+import Icon from "./Icon";
 // This is a functional component - just sent up a little differently as an arrow function!
 const Button = (props) => {
 	let classList = "";
@@ -19,7 +20,20 @@ const Button = (props) => {
 	if (props.red) {
 		classList += " button-red";
 	}
-	return <button className={classList}>{props.label}</button>;
+	if (props.icon) {
+		return (
+			<button className={classList}>
+				<Icon icon="cart"></Icon>
+				{props.label}
+			</button>
+		);
+	}
+	return (
+		<button className={classList}>
+			<Icon icon="cart"></Icon>
+			{props.label}
+		</button>
+	);
 };
 
 export default Button;
