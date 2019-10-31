@@ -112,3 +112,10 @@ button {
 .button-large {
 	padding: 10px 50px;
 }
+
+.button-icon {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
