@@ -19,7 +19,7 @@ const Button = (props) => {
 	if (props.red) {
 		classList += " button-red";
 	}
-	return <button className={classList}>Do Something</button>;
+	return <button className={classList}>{props.label}</button>;
 };
 
 export default Button;
