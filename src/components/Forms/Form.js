@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import "./Form.css";
-import InputField from "./InputField";
-import Select from "./Select";
-import Counter from "./Counter";
-import Submit from "./Submit";
-import Checkbox from "./Checkbox";
+import InputField from "./Input/InputField";
+import Select from "./Select/Select";
+import Counter from "./Counter/Counter";
+import Submit from "./Submit/Submit";
+import Checkbox from "../Checkbox";
 
 class Form extends Component {
 	constructor(props) {

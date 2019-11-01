@@ -2,7 +2,7 @@ import React from "react";
 import { storiesOf } from "@storybook/react";
 
 import Block from "./Block";
-import Inline from "./Inline";
+import Inline from "../Inline/Inline";
 
 storiesOf("Products", module)
 	.add("Block", () => (
