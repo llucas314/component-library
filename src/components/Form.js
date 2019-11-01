@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./Form.css";
+import InputField from "./InputField";
 
 class Form extends Component {
 	constructor(props) {
@@ -31,13 +32,7 @@ class Form extends Component {
 			return (
 				<div className={classList}>
 					<form onSubmit={this.handleSubmit}>
-						<label>{this.props.name || "Email"}</label>
-						<br></br>
-						<input
-							type={this.props.type}
-							placeholder={this.props.name || "Email"}
-							onChange={this.changeValue}
-						/>
+						<InputField name={this.props.name} changeValue={this.changeValue} />
 					</form>
 				</div>
 			);
