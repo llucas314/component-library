@@ -4,7 +4,7 @@ import InputField from "./Input/InputField";
 import Select from "./Select/Select";
 import Counter from "./Counter/Counter";
 import Submit from "./Submit/Submit";
-import Checkbox from "../Checkbox";
+import Checkbox from "./Checkbox/Checkbox";
 
 class Form extends Component {
 	constructor(props) {

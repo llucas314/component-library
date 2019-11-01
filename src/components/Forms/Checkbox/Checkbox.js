@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import Icon from "./Icon";
 import "./Checkbox.css";
+import Icon from "../../Icon/Icon";
 
 class Checkbox extends Component {
 	constructor(props) {

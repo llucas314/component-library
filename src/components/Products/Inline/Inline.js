@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import "./Inline.css";
 import Icon from "../../Icon/Icon";
-import mac from "./icons/mac.png";
-import beats from "./icons/beats.png";
-import Button from "./Button";
+import mac from "../../Icon/icons/mac.png";
+import beats from "../../Icon/icons/beats.png";
+import Button from "../../Buttons/Button";
 
 export default class Inline extends Component {
 	constructor(props) {

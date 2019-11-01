@@ -1,7 +1,7 @@
 import React from "react";
 import "./Submit.css";
 import InputField from "../Input/InputField";
-import Button from "./Button";
+import Button from "../../Buttons/Button";
 
 const Submit = (props) => {
 	return (
