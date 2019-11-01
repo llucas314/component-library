@@ -82,12 +82,14 @@ class Form extends Component {
 			return (
 				<div className={classList}>
 					<form onSubmit={this.handleSubmit}>
-						<Checkbox
-							name={this.props.name}
-							value={this.props.value}
-							onChange={this.changeValue}
-							message={this.props.message}
-						/>
+						<div className>
+							<Checkbox
+								name={this.props.name}
+								value={this.props.value}
+								onChange={this.changeValue}
+								message={this.props.message}
+							/>
+						</div>
 					</form>
 				</div>
 			);

@@ -1,0 +1,26 @@
+.checkbox {
+  opacity: 0;
+  width: 244px;
+  height: 18px;
+}
+
+.checked-container {
+  background-color: black;
+}
+
+.checked-container img {
+  width: 18px;
+  height: 18px;
+}
+
+.checked-container input {
+  width: 18px;
+  height: 18px;
+}
+
+.unchecked-container {
+  border: 2px solid black;
+  width: 244px;
+  height: 18px;
+}
+/*# sourceMappingURL=Checkbox.css.map */
