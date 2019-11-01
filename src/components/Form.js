@@ -4,6 +4,7 @@ import InputField from "./InputField";
 import Select from "./Select";
 import Counter from "./Counter";
 import Submit from "./Submit";
+import Checkbox from "./Checkbox";
 
 class Form extends Component {
 	constructor(props) {
@@ -73,6 +74,19 @@ class Form extends Component {
 							changeValue={this.changeValue}
 							type={this.props.type}
 							label={this.props.label}
+						/>
+					</form>
+				</div>
+			);
+		} else if (this.props.formType === "check") {
+			return (
+				<div className={classList}>
+					<form onSubmit={this.handleSubmit}>
+						<Checkbox
+							name={this.props.name}
+							value={this.props.value}
+							onChange={this.changeValue}
+							message={this.props.message}
 						/>
 					</form>
 				</div>

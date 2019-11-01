@@ -13,4 +13,12 @@ storiesOf("Forms", module)
 	))
 	.add("Submit", () => (
 		<Form formType="submit" name="Voucher code" type="primary" label="Reedem" />
+	))
+	.add("Checkbox", () => (
+		<Form
+			formType="check"
+			name="checkbox"
+			value="no poppup"
+			message="Don't show this popup again"
+		/>
 	));
