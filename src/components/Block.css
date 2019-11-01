@@ -9,9 +9,14 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-top: 20px;
   width: 270px;
   height: 349px;
   text-align: center;
+  background-color: transparent;
+  -webkit-transition: all 300ms ease-in;
+  transition: all 300ms ease-in;
+  border: 3px solid #f6f7f8;
 }
 
 .block-container .img-div {
@@ -24,10 +29,24 @@
   width: 100%;
 }
 
+.block-container .info-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .block-container .price-div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  text-align: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -48,6 +67,7 @@
 .block-container .block-modal {
   position: fixed;
   height: 174.5px;
+  width: 270px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -57,5 +77,101 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-color: #ffffffc9;
+  visibility: hidden;
+  opacity: 0%;
+}
+
+.block-container .block-modal .modal-div {
+  margin: 2px;
+}
+
+.block-container .block-modal .modal-div button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 100%;
+  border-color: #33a0ff;
+}
+
+.block-container .block-modal .modal-div button img {
+  padding: 0;
+  margin: 0;
+}
+
+.block-container:hover .block-modal {
+  visibility: visible;
+  opacity: 100%;
+}
+
+.block-container .bar {
+  width: 230px;
+  height: 1px;
+  background-color: #f6f7f8;
+}
+
+.block-container.gray {
+  background-color: #fafafb;
+}
+
+.block-container.gray .bar {
+  width: 230px;
+  height: 1px;
+  background-color: #70707065;
+}
+
+.block-container.gray .bar button.button-outline {
+  background-color: #33a0ff;
+}
+
+.block-container.row {
+  width: 570px;
+  height: 224px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.block-container.row h4 {
+  width: 134px;
+  font-size: 14px;
+}
+
+.block-container.row .block-product {
+  -webkit-transform: translate(24px, -15px);
+          transform: translate(24px, -15px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.block-container.row .block-product .img-div {
+  padding: 0 25px;
+}
+
+.block-container.row .block-product .bar {
+  display: none;
+}
+
+.block-container.row .block-modal {
+  width: 288px;
+  height: 250px;
+  -webkit-transform: translate(15px, -18px);
+          transform: translate(15px, -18px);
 }
 /*# sourceMappingURL=Block.css.map */

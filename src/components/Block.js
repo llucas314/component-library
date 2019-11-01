@@ -12,15 +12,27 @@ export default class Block extends Component {
 		this.state = {
 			star: 4,
 			image: mac,
+			like: "like",
+			cart: "cart",
 		};
 	}
 
 	render() {
-		if (this.props.name == beats) {
+		if (this.props.name === "beats" && this.state.image === mac) {
 			this.setState({ image: beats });
 		}
+		let classList = "block-container";
+		if (this.props.gray) {
+			classList += " gray";
+			if (this.state.like === "like") {
+				this.setState({ like: "whiteLike", cart: "whiteCart" });
+			}
+		}
+		if (this.props.row) {
+			classList += " row";
+		}
 		return (
-			<div className="block-container">
+			<div className={classList}>
 				<div className="block-product">
 					<div className="img-div">
 						<img src={this.state.image} alt={this.props.name}></img>
@@ -43,10 +55,10 @@ export default class Block extends Component {
 				</div>
 				<div className="block-modal">
 					<div className="modal-div">
-						<Button type="primary" icon="like" />
+						<Button type="primary" icon={this.state.like} outline />
 					</div>
 					<div className="modal-div">
-						<Button type="primary" icon="cart" />
+						<Button type="primary" icon={this.state.cart} outline />
 					</div>
 				</div>
 			</div>

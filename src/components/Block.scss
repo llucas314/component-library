@@ -2,9 +2,13 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	padding-top: 20px;
 	width: 270px;
 	height: 349px;
 	text-align: center;
+	background-color: transparent;
+	transition: all 300ms ease-in;
+	border: 3px solid #f6f7f8;
 	.img-div {
 		width: 236px;
 		height: 153px;
@@ -13,8 +17,14 @@
 			width: 100%;
 		}
 	}
+	.info-div {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
 	.price-div {
 		display: flex;
+		text-align: center;
 		justify-content: space-between;
 		width: 86.5px;
 		height: 16px;
@@ -29,8 +39,80 @@
 	.block-modal {
 		position: fixed;
 		height: 174.5px;
+		width: 270px;
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		background-color: #ffffffc9;
+		visibility: hidden;
+		opacity: 0%;
+
+		.modal-div {
+			margin: 2px;
+
+			button {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 46px;
+				height: 46px;
+				border-radius: 100%;
+				border-color: #33a0ff;
+
+				img {
+					padding: 0;
+					margin: 0;
+				}
+			}
+		}
+	}
+	&:hover {
+		.block-modal {
+			visibility: visible;
+			opacity: 100%;
+		}
+	}
+	.bar {
+		width: 230px;
+		height: 1px;
+		background-color: #f6f7f8;
+	}
+	&.gray {
+		background-color: #fafafb;
+		.bar {
+			width: 230px;
+			height: 1px;
+			background-color: #70707065;
+			button.button-outline {
+				background-color: #33a0ff;
+			}
+		}
+	}
+	&.row {
+		width: 570px;
+		height: 224px;
+		flex-direction: row;
+		align-items: center;
+		h4 {
+			width: 134px;
+			font-size: 14px;
+		}
+		.block-product {
+			transform: translate(24px, -15px);
+			display: flex;
+
+			justify-content: flex-start;
+			.img-div {
+				padding: 0 25px;
+			}
+			.bar {
+				display: none;
+			}
+		}
+		.block-modal {
+			width: 288px;
+			height: 250px;
+			transform: translate(15px, -18px);
+		}
 	}
 }
