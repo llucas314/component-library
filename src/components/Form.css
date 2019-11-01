@@ -1,0 +1,29 @@
+.form-container {
+  width: 300px;
+  height: 66px;
+  font-size: 14px;
+}
+
+.form-container input {
+  border: 2px solid #f1f3f4;
+  border-radius: 4px;
+  width: 100%;
+  height: 46px;
+}
+
+.form-container.form-small {
+  height: 58px;
+}
+
+.form-container.form-small input {
+  height: 38px;
+}
+
+.form-container.form-large {
+  height: 80px;
+}
+
+.form-container.form-large input {
+  height: 60px;
+}
+/*# sourceMappingURL=Form.css.map */
