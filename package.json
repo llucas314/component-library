@@ -1,7 +1,7 @@
 {
 	"name": "component-library",
 	"version": "0.1.0",
-	"private": true,
+	"private": false,
 	"dependencies": {
 		"react": "^16.11.0",
 		"react-dom": "^16.11.0",
@@ -14,6 +14,11 @@
 		"eject": "react-scripts eject",
 		"storybook": "start-storybook",
 		"build-storybook": "build-storybook -c .storybook"
+	},
+	"author": {
+		"name": "Lorenzo Lucas",
+		"email": "llucas314@gmail.com",
+		"url": "https://github.com/llucas314/component-library"
 	},
 	"eslintConfig": {
 		"extends": "react-app"
