@@ -3,6 +3,7 @@ import "./Form.css";
 import InputField from "./InputField";
 import Select from "./Select";
 import Counter from "./Counter";
+import Submit from "./Submit";
 
 class Form extends Component {
 	constructor(props) {
@@ -30,7 +31,7 @@ class Form extends Component {
 		if (this.props.small) {
 			classList += " form-small";
 		}
-		if (this.props.type === "text") {
+		if (this.props.formType === "text") {
 			return (
 				<div className={classList}>
 					<form onSubmit={this.handleSubmit}>
@@ -38,7 +39,7 @@ class Form extends Component {
 					</form>
 				</div>
 			);
-		} else if (this.props.type === "select") {
+		} else if (this.props.formType === "select") {
 			return (
 				<div className={classList}>
 					<form onSubmit={this.handleSubmit}>
@@ -50,7 +51,7 @@ class Form extends Component {
 					</form>
 				</div>
 			);
-		} else if (this.props.type === "number") {
+		} else if (this.props.formType === "number") {
 			return (
 				<div className={classList}>
 					<form onSubmit={this.handleSubmit}>
@@ -59,6 +60,19 @@ class Form extends Component {
 							step={this.props.step}
 							max={this.props.max}
 							min={this.props.min}
+						/>
+					</form>
+				</div>
+			);
+		} else if (this.props.formType === "submit") {
+			return (
+				<div className={classList}>
+					<form onSubmit={this.handleSubmit}>
+						<Submit
+							name={this.props.name}
+							changeValue={this.changeValue}
+							type={this.props.type}
+							label={this.props.label}
 						/>
 					</form>
 				</div>
