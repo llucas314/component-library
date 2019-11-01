@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./Counter.css";
+import Icon from "./Icon";
 
 export default class Counter extends Component {
 	constructor(props) {
@@ -26,10 +27,14 @@ export default class Counter extends Component {
 
 	render() {
 		return (
-			<div>
-				<button onClick={this.decreaseCount}>-</button>
+			<div className="counter-container">
+				<button onClick={this.decreaseCount}>
+					<Icon icon="minus" />
+				</button>
 				<h1>{this.state.count}</h1>
-				<button onClick={this.increaseCount}>+</button>
+				<button onClick={this.increaseCount}>
+					<Icon icon="add" />
+				</button>
 			</div>
 		);
 	}

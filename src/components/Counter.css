@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+.counter-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f6f7f8;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 46px;
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.counter-container button {
+  width: 55px;
+  background-color: transparent;
+  border: none;
+}
+
+.counter-container button img {
+  width: 8px;
+}
+/*# sourceMappingURL=Counter.css.map */
