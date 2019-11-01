@@ -24,10 +24,12 @@ const Button = (props) => {
 		classList += " button-icon";
 	}
 	return (
-		<button type="submit" className={classList} onClick={props.onClick}>
-			<Icon icon={props.icon} />
-			{props.label}
-		</button>
+		<div className="button-container">
+			<button type="submit" className={classList} onClick={props.onClick}>
+				<Icon icon={props.icon} />
+				{props.label}
+			</button>
+		</div>
 	);
 };
 

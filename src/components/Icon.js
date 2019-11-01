@@ -5,6 +5,7 @@ import like from "./icons/hearts.svg";
 import checkmark from "./icons/checkmark.svg";
 import add from "./icons/add.svg";
 import minus from "./icons/minus.svg";
+import star from "./icons/star.svg";
 
 function Icon(props) {
 	if (props.icon === "cart") {
@@ -17,6 +18,8 @@ function Icon(props) {
 		return <img src={add} alt={props.icon}></img>;
 	} else if (props.icon === "minus") {
 		return <img src={minus} alt={props.icon}></img>;
+	} else if (props.icon === "star") {
+		return <img src={star} alt={props.icon}></img>;
 	} else return <div></div>;
 }
 

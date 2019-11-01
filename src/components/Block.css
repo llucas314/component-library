@@ -1,0 +1,61 @@
+.block-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 270px;
+  height: 349px;
+  text-align: center;
+}
+
+.block-container .img-div {
+  width: 236px;
+  height: 153px;
+}
+
+.block-container .img-div img {
+  height: 100%;
+  width: 100%;
+}
+
+.block-container .price-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 86.5px;
+  height: 16px;
+}
+
+.block-container .sale {
+  color: #ff4858;
+}
+
+.block-container .original {
+  color: #c1c8ce;
+  -webkit-text-decoration: line-through #5d656b;
+          text-decoration: line-through #5d656b;
+}
+
+.block-container .block-modal {
+  position: fixed;
+  height: 174.5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=Block.css.map */

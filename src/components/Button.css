@@ -1,120 +1,162 @@
-button {
+.button-container button {
   color: white;
   border-radius: 2px;
   padding: 5px 25px;
+  -webkit-transition: 200ms ease-in;
+  transition: 200ms ease-in;
 }
 
-.button-primary {
+.button-container .button-primary {
   background-color: #33a0ff;
   border: #33a0ff;
 }
 
-.button-primary.button-outline {
+.button-container .button-primary.button-outline {
   background-color: transparent;
   color: #33a0ff;
   border: 2px solid #33a0ff;
 }
 
-.button-primary.button-faded {
+.button-container .button-primary.button-outline:hover {
+  color: #fff;
+}
+
+.button-container .button-primary.button-faded {
   background-color: rgba(51, 160, 255, 0.1);
   color: #33a0ff;
 }
 
-.button-primary:hover {
+.button-container .button-primary.button-faded:hover {
+  color: #fff;
+}
+
+.button-container .button-primary:hover {
   background-color: #2e90e5;
   border: #2e90e5;
 }
 
-.button-danger {
+.button-container .button-danger {
   background-color: #ff4858;
   border: #ff4858;
 }
 
-.button-danger.button-outline {
+.button-container .button-danger.button-outline {
   background-color: transparent;
   color: #ff4858;
   border: 2px solid #ff4858;
 }
 
-.button-danger.button-faded {
+.button-container .button-danger.button-outline:hover {
+  color: #fff;
+}
+
+.button-container .button-danger.button-faded {
   background-color: rgba(255, 72, 88, 0.1);
   color: #ff4858;
 }
 
-.button-danger:hover {
+.button-container .button-danger.button-faded:hover {
+  color: #fff;
+}
+
+.button-container .button-danger:hover {
   background-color: #f53848;
   border: #f53848;
 }
 
-.button-success {
+.button-container .button-success {
   background-color: #0ad00a;
   border: #0ad00a;
 }
 
-.button-success.button-outline {
+.button-container .button-success.button-outline {
   background-color: transparent;
   color: #0ad00a;
   border: 2px solid #0ad00a;
 }
 
-.button-success.button-faded {
+.button-container .button-success.button-outline:hover {
+  color: #fff;
+}
+
+.button-container .button-success.button-faded {
   background-color: rgba(10, 208, 10, 0.1);
   color: #0ad00a;
 }
 
-.button-success:hover {
+.button-container .button-success.button-faded:hover {
+  color: #fff;
+}
+
+.button-container .button-success:hover {
   background-color: #07c107;
   border: #07c107;
 }
 
-.button-warning {
+.button-container .button-warning {
   background-color: #ffc600;
   border: #ffc600;
   color: black;
 }
 
-.button-warning.button-outline {
+.button-container .button-warning.button-outline {
   background-color: transparent;
   color: #ffc600;
   border: 2px solid #ffc600;
 }
 
-.button-warning.button-faded {
+.button-container .button-warning.button-outline:hover {
+  color: #22262a;
+}
+
+.button-container .button-warning.button-faded {
   background-color: rgba(255, 198, 0, 0.1);
   color: #ffc600;
 }
 
-.button-warning:hover {
+.button-container .button-warning.button-faded:hover {
+  color: #22262a;
+}
+
+.button-container .button-warning:hover {
   background-color: #ebb600;
   border: #ebb600;
 }
 
-.button-default {
+.button-container .button-default {
   background-color: #22262a;
   border: #22262a;
 }
 
-.button-default.button-outline {
+.button-container .button-default.button-outline {
   background-color: transparent;
   color: #22262a;
   border: 2px solid #22262a;
 }
 
-.button-default.button-faded {
+.button-container .button-default.button-outline:hover {
+  color: #fff;
+}
+
+.button-container .button-default.button-faded {
   background-color: rgba(34, 38, 42, 0.1);
   color: #22262a;
 }
 
-.button-default:hover {
+.button-container .button-default.button-faded:hover {
+  color: #fff;
+}
+
+.button-container .button-default:hover {
   background-color: #13161a;
   border: #13161a;
 }
 
-.button-large {
+.button-container .button-large {
   padding: 10px 50px;
 }
 
-.button-icon {
+.button-container .button-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

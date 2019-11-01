@@ -8,114 +8,147 @@ $yellow: #ffc600;
 $yellow-hover: #ebb600;
 $black: #22262a;
 $black-hover: #13161a;
-button {
-	color: white;
-	border-radius: 2px;
-	padding: 5px 25px;
-}
-.button-primary {
-	background-color: $blue;
-	border: $blue;
-	&.button-outline {
-		background-color: transparent;
-		color: $blue;
-		border: 2px solid $blue;
+.button-container {
+	button {
+		color: white;
+		border-radius: 2px;
+		padding: 5px 25px;
+		transition: 200ms ease-in;
 	}
-	&.button-faded {
-		background-color: rgba($color: $blue, $alpha: 0.1);
-		color: $blue;
+	.button-primary {
+		background-color: $blue;
+		border: $blue;
+		&.button-outline {
+			background-color: transparent;
+			color: $blue;
+			border: 2px solid $blue;
+			&:hover {
+				color: #fff;
+			}
+		}
+		&.button-faded {
+			background-color: rgba($color: $blue, $alpha: 0.1);
+			color: $blue;
+			&:hover {
+				color: #fff;
+			}
+		}
 	}
-}
 
-.button-primary:hover {
-	background-color: $blue-hover;
-	border: $blue-hover;
-}
-
-.button-danger {
-	background-color: $red;
-	border: $red;
-	&.button-outline {
-		background-color: transparent;
-		color: $red;
-		border: 2px solid $red;
+	.button-primary:hover {
+		background-color: $blue-hover;
+		border: $blue-hover;
 	}
-	&.button-faded {
-		background-color: rgba($color: $red, $alpha: 0.1);
-		color: $red;
+
+	.button-danger {
+		background-color: $red;
+		border: $red;
+		&.button-outline {
+			background-color: transparent;
+			color: $red;
+			border: 2px solid $red;
+			&:hover {
+				color: #fff;
+			}
+		}
+		&.button-faded {
+			background-color: rgba($color: $red, $alpha: 0.1);
+			color: $red;
+			&:hover {
+				color: #fff;
+			}
+		}
 	}
-}
 
-.button-danger:hover {
-	background-color: $red-hover;
-	border: $red-hover;
-}
-
-.button-success {
-	background-color: $green;
-	border: $green;
-	&.button-outline {
-		background-color: transparent;
-		color: $green;
-		border: 2px solid $green;
+	.button-danger:hover {
+		background-color: $red-hover;
+		border: $red-hover;
 	}
-	&.button-faded {
-		background-color: rgba($color: $green, $alpha: 0.1);
-		color: $green;
+
+	.button-success {
+		background-color: $green;
+		border: $green;
+		&.button-outline {
+			background-color: transparent;
+			color: $green;
+			border: 2px solid $green;
+			&:hover {
+				color: #fff;
+			}
+		}
+		&.button-faded {
+			background-color: rgba($color: $green, $alpha: 0.1);
+			color: $green;
+			&:hover {
+				color: #fff;
+			}
+		}
 	}
-}
 
-.button-success:hover {
-	background-color: $green-hover;
-	border: $green-hover;
-}
-
-.button-warning {
-	background-color: $yellow;
-	border: $yellow;
-	color: black;
-	&.button-outline {
-		background-color: transparent;
-		color: $yellow;
-		border: 2px solid $yellow;
+	.button-success:hover {
+		background-color: $green-hover;
+		border: $green-hover;
 	}
-	&.button-faded {
-		background-color: rgba($color: $yellow, $alpha: 0.1);
-		color: $yellow;
+
+	.button-warning {
+		background-color: $yellow;
+		border: $yellow;
+		color: black;
+		&.button-outline {
+			background-color: transparent;
+			color: $yellow;
+			border: 2px solid $yellow;
+			&:hover {
+				color: $black;
+			}
+		}
+		&.button-faded {
+			background-color: rgba($color: $yellow, $alpha: 0.1);
+			color: $yellow;
+			&:hover {
+				color: $black;
+			}
+		}
 	}
-}
 
-.button-warning:hover {
-	background-color: $yellow-hover;
-	border: $yellow-hover;
-}
-
-.button-default {
-	background-color: $black;
-	border: $black;
-	&.button-outline {
-		background-color: transparent;
-		color: $black;
-		border: 2px solid $black;
+	.button-warning:hover {
+		background-color: $yellow-hover;
+		border: $yellow-hover;
 	}
-	&.button-faded {
-		background-color: rgba($color: $black, $alpha: 0.1);
-		color: $black;
+
+	.button-default {
+		background-color: $black;
+		border: $black;
+		&.button-outline {
+			background-color: transparent;
+			color: $black;
+			border: 2px solid $black;
+			&:hover {
+				color: #fff;
+			}
+		}
+		&.button-faded {
+			background-color: rgba($color: $black, $alpha: 0.1);
+			color: $black;
+			&:hover {
+				color: #fff;
+			}
+		}
 	}
-}
 
-.button-default:hover {
-	background-color: $black-hover;
-	border: $black-hover;
-}
+	.button-default:hover {
+		background-color: $black-hover;
+		border: $black-hover;
+	}
 
-.button-large {
-	padding: 10px 50px;
-}
+	.button-large {
+		padding: 10px 50px;
+	}
 
-.button-icon {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
+	.button-icon {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
 }

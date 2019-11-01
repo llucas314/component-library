@@ -14,7 +14,7 @@ storiesOf("Forms", module)
 	.add("Select Small", () => (
 		<Form
 			formType="select"
-			options={["selected", "selected", "selected", "selected"]}
+			options={["selected 1", "selected 2", "selected 3", "selected 4"]}
 			small
 		/>
 	))
@@ -32,7 +32,7 @@ storiesOf("Forms", module)
 	.add("Faded Select Small", () => (
 		<Form
 			formType="select"
-			options={["selected", "selected", "selected", "selected"]}
+			options={["selected 1", "selected 2", "selected 3", "selected 4"]}
 			small
 			faded
 		/>
@@ -42,6 +42,15 @@ storiesOf("Forms", module)
 	))
 	.add("Submit", () => (
 		<Form formType="submit" name="Voucher code" type="primary" label="Reedem" />
+	))
+	.add("LargeSubmit", () => (
+		<Form
+			formType="submit"
+			name="Voucher code"
+			type="primary"
+			label="Reedem"
+			large
+		/>
 	))
 	.add("Checkbox", () => (
 		<Form

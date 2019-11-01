@@ -5,7 +5,7 @@ import Button from "./Button";
 
 const Submit = (props) => {
 	return (
-		<div>
+		<div className="submit-container">
 			<InputField name={props.name} changeValue={props.changeValue} submit />
 			<Button type={props.type} label={props.label} />
 		</div>

@@ -1,0 +1,36 @@
+.block-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 270px;
+	height: 349px;
+	text-align: center;
+	.img-div {
+		width: 236px;
+		height: 153px;
+		img {
+			height: 100%;
+			width: 100%;
+		}
+	}
+	.price-div {
+		display: flex;
+		justify-content: space-between;
+		width: 86.5px;
+		height: 16px;
+	}
+	.sale {
+		color: #ff4858;
+	}
+	.original {
+		color: #c1c8ce;
+		text-decoration: line-through #5d656b;
+	}
+	.block-modal {
+		position: fixed;
+		height: 174.5px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
