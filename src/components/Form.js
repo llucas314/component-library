@@ -29,6 +29,9 @@ class Form extends Component {
 		if (this.props.large) {
 			classList += " form-large";
 		}
+		if (this.props.faded) {
+			classList += " form-faded";
+		}
 		if (this.props.small) {
 			classList += " form-small";
 		}
