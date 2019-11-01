@@ -8,7 +8,7 @@ function Icon(props) {
 		return <img src={cart} alt={props.icon}></img>;
 	} else if (props.icon === "like") {
 		return <img src={like} alt={props.icon}></img>;
-	} else return "";
+	} else return <div></div>;
 }
 
 export default Icon;

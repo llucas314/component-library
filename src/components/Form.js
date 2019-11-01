@@ -57,7 +57,7 @@ class Form extends Component {
 					</form>
 				</div>
 			);
-		} else return "";
+		} else return <div></div>;
 	}
 }
 export default Form;
