@@ -13,6 +13,11 @@ class Form extends Component {
 
 	changeValue = (e) => this.setState({ value: e.target.value });
 	handleSubmit = (e) => e.preventDefault();
+	componentDidMount() {
+		if (this.props.options) {
+			this.setState({ value: this.props.options[0] });
+		}
+	}
 
 	render() {
 		let classList = "form-container";
@@ -22,19 +27,37 @@ class Form extends Component {
 		if (this.props.small) {
 			classList += " form-small";
 		}
-		return (
-			<div className={classList}>
-				<form onSubmit={this.handleSubmit}>
-					<label>{this.props.name || "Email"}</label>
-					<br></br>
-					<input
-						type={this.props.type}
-						placeholder={this.props.name || "Email"}
-						onChange={this.changeValue}
-					/>
-				</form>
-			</div>
-		);
+		if (this.props.type === "text") {
+			return (
+				<div className={classList}>
+					<form onSubmit={this.handleSubmit}>
+						<label>{this.props.name || "Email"}</label>
+						<br></br>
+						<input
+							type={this.props.type}
+							placeholder={this.props.name || "Email"}
+							onChange={this.changeValue}
+						/>
+					</form>
+				</div>
+			);
+		} else if (this.props.type === "select") {
+			return (
+				<div className={classList}>
+					<form onSubmit={this.handleSubmit}>
+						<label>{this.props.name || "Select"}</label>
+						<br></br>
+						<select>
+							{this.props.options.map((option) => (
+								<option key={option} value={option} onChange={this.changeValue}>
+									{option}
+								</option>
+							))}
+						</select>
+					</form>
+				</div>
+			);
+		} else return "";
 	}
 }
 export default Form;
