@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./Form.css";
 import InputField from "./InputField";
 import Select from "./Select";
+import Counter from "./Counter";
 
 class Form extends Component {
 	constructor(props) {
@@ -45,6 +46,19 @@ class Form extends Component {
 							name={this.props.name}
 							options={this.props.options}
 							changeValue={this.changeValue}
+						/>
+					</form>
+				</div>
+			);
+		} else if (this.props.type === "number") {
+			return (
+				<div className={classList}>
+					<form onSubmit={this.handleSubmit}>
+						<Counter
+							count={this.props.count}
+							step={this.props.step}
+							max={this.props.max}
+							min={this.props.min}
 						/>
 					</form>
 				</div>
