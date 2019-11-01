@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./Form.css";
 import InputField from "./InputField";
+import Select from "./Select";
 
 class Form extends Component {
 	constructor(props) {
@@ -40,15 +41,11 @@ class Form extends Component {
 			return (
 				<div className={classList}>
 					<form onSubmit={this.handleSubmit}>
-						<label>{this.props.name || "Select"}</label>
-						<br></br>
-						<select>
-							{this.props.options.map((option) => (
-								<option key={option} value={option} onChange={this.changeValue}>
-									{option}
-								</option>
-							))}
-						</select>
+						<Select
+							name={this.props.name}
+							options={this.props.options}
+							changeValue={this.changeValue}
+						/>
 					</form>
 				</div>
 			);
