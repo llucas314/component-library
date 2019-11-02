@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./Counter.css";
-import Icon from "../../Icon/Icon";
+import Icon from "../../Icons/Icon";
 
 export default class Counter extends Component {
 	constructor(props) {

@@ -95,6 +95,7 @@
 .inline-container .inline-product .title-container .review-container .sub-review {
   color: #33a0ff;
   text-decoration: none;
+  border: none;
 }
 
 .inline-container .inline-product .inline-bar {

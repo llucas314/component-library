@@ -1,6 +1,6 @@
 import React from "react";
 import "./Button.css";
-import Icon from "../Icon/Icon";
+import Icon from "../Icons/Icon";
 
 const Button = (props) => {
 	let classList = "";

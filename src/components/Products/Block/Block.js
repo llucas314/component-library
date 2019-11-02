@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import "./Block.css";
-import Icon from "../../Icon/Icon";
-import mac from "../../Icon/icons/mac.png";
-import beats from "../../Icon/icons/beats.png";
+import Icon from "../../Icons/Icon";
+import mac from "../../Icon/icon-img/mac.png";
+import beats from "../../Icon/icon-img/beats.png";
 import Button from "../../Buttons/Button";
 
 export default class Block extends Component {
