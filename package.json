@@ -1,5 +1,5 @@
 {
-	"name": "component-library",
+	"name": "component-library-lorenzo-lucas",
 	"version": "0.1.0",
 	"private": false,
 	"dependencies": {
@@ -7,6 +7,16 @@
 		"react-dom": "^16.11.0",
 		"react-scripts": "3.2.0"
 	},
+	"main": "src/index.js",
+	"bin": "src/index.js",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/llucas314/component-library"
+	},
+	"bugs": {
+		"url": "https://github.com/llucas314/component-library/issues"
+	},
+	"homepage": "https://github.com/llucas314/component-library#readme",
 	"scripts": {
 		"start": "react-scripts start",
 		"build": "react-scripts build",
