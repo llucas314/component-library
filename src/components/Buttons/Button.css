@@ -188,4 +188,8 @@
 .button-container .button-icon:hover {
   border: none;
 }
+
+.button-container .button-icon-text img {
+  padding-right: 6px;
+}
 /*# sourceMappingURL=Button.css.map */
