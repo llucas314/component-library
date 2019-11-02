@@ -27,7 +27,7 @@ This was the first project that I used react. A lot of time was spent getting us
 ## How to Run
 
 1. Preview the library with Storybook [here](https://trusting-shirley-06f0a4.netlify.com).
-2. .
+2. To install the library use the command `npm i component-library-lorenzo-lucas` in your terminal.
 
   
 ## Contributing
