@@ -57,6 +57,8 @@
 }
 
 .label-check-container .unchecked-container img {
+  height: 10px;
+  padding: 0 6px 0 0;
   visibility: hidden;
 }
 
