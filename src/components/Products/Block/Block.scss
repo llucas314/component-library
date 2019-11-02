@@ -46,7 +46,9 @@
 		background-color: #ffffffc9;
 		visibility: hidden;
 		opacity: 0%;
-
+		.modal-div-container {
+			display: flex;
+		}
 		.modal-div {
 			margin: 2px;
 
@@ -56,10 +58,18 @@
 				justify-content: center;
 				width: 46px;
 				height: 46px;
+				padding: 3px 23px;
 				border-radius: 100%;
-				border-color: #33a0ff;
+				border: 2px solid #33a0ff;
+				background-color: transparent;
+				transition: background-color 200ms ease-in;
+				&:hover {
+					background-color: #33a0ff56;
+				}
 
 				img {
+					height: 15px;
+					width: 16px;
 					padding: 0;
 					margin: 0;
 				}
@@ -83,9 +93,6 @@
 			width: 230px;
 			height: 1px;
 			background-color: #70707065;
-			button.button-outline {
-				background-color: #33a0ff;
-			}
 		}
 	}
 	&.row {
@@ -103,16 +110,22 @@
 
 			justify-content: flex-start;
 			.img-div {
-				padding: 0 25px;
 			}
 			.bar {
 				display: none;
 			}
 		}
 		.block-modal {
-			width: 288px;
-			height: 250px;
+			width: 247px;
+			height: 192px;
 			transform: translate(15px, -18px);
+		}
+	}
+}
+.block-container {
+	&.gray {
+		button {
+			background-color: #33a0ff;
 		}
 	}
 }

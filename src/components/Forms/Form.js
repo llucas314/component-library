@@ -35,6 +35,9 @@ class Form extends Component {
 		if (this.props.small) {
 			classList += " form-small";
 		}
+		if (this.props.blue) {
+			classList += " form-blue";
+		}
 		if (this.props.formType === "text") {
 			return (
 				<div className={classList}>

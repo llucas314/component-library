@@ -28,6 +28,7 @@ export default class Block extends Component {
 				this.setState({ like: "whiteLike", cart: "whiteCart" });
 			}
 		}
+
 		if (this.props.row) {
 			classList += " row";
 		}
@@ -54,11 +55,13 @@ export default class Block extends Component {
 					</div>
 				</div>
 				<div className="block-modal">
-					<div className="modal-div">
-						<Button type="primary" icon={this.state.like} outline />
-					</div>
-					<div className="modal-div">
-						<Button type="primary" icon={this.state.cart} outline />
+					<div className="modal-div-container">
+						<div className="modal-div">
+							<Button type="primary" icon={this.state.like} />
+						</div>
+						<div className="modal-div">
+							<Button type="primary" icon={this.state.cart} />
+						</div>
 					</div>
 				</div>
 			</div>

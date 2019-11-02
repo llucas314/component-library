@@ -21,7 +21,7 @@ class Checkbox extends Component {
 
 	render() {
 		return (
-			<div>
+			<div className="label-check-container">
 				<div className={this.state.cssClass}>
 					<Icon icon="checkmark" />
 					<input

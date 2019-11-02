@@ -10,7 +10,6 @@ export default class Inline extends Component {
 		super(props);
 
 		this.state = {
-			star: 4,
 			image: mac,
 			like: "like",
 			cart: "cart",
@@ -51,22 +50,21 @@ export default class Inline extends Component {
 									<Icon icon="star" />
 								</div>
 								<div className="review">0 reviews</div>
-								<div className="sub-review">Submit a review</div>
+								<a className="sub-review" href="#" target="_blank">
+									Submit a review
+								</a>
 							</div>
 						</div>
+						<div className="inline-bar"></div>
 						<div className="price-div">
 							<h3 className="sale">{this.props.sale}</h3>
 							<h3 className="original">{this.props.original}</h3>
 						</div>
 						<p className="item-description">{this.props.description}</p>
-					</div>
-				</div>
-				<div className="block-modal">
-					<div className="modal-div">
-						<Button type="primary" icon={this.state.like} outline />
-					</div>
-					<div className="modal-div">
-						<Button type="primary" icon={this.state.cart} outline />
+						<div className="buttons-inline">
+							<Button icon="cart" type="primary" label="Add To Cart" faded />
+							<Button icon="like" type="primary" faded />
+						</div>
 					</div>
 				</div>
 			</div>

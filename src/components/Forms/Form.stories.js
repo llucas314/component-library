@@ -52,7 +52,13 @@ storiesOf("Forms", module)
 			large
 		/>
 	))
-	.add("Checkbox", () => (
+	.add("Blue Checkbox", () => (
+		<Form formType="check" name="checkbox" value="no poppup" blue />
+	))
+	.add("Black Checkbox", () => (
+		<Form formType="check" name="checkbox" value="no poppup" />
+	))
+	.add("Black Checkbox Message", () => (
 		<Form
 			formType="check"
 			name="checkbox"

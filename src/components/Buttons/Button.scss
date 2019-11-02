@@ -17,7 +17,7 @@ $black-hover: #13161a;
 	}
 	.button-primary {
 		background-color: $blue;
-		border: $blue;
+		border: 2px solid $blue;
 		&.button-outline {
 			background-color: transparent;
 			color: $blue;
@@ -29,20 +29,22 @@ $black-hover: #13161a;
 		&.button-faded {
 			background-color: rgba($color: $blue, $alpha: 0.1);
 			color: $blue;
+			border: none;
 			&:hover {
 				color: #fff;
+				border: none;
 			}
 		}
 	}
 
 	.button-primary:hover {
 		background-color: $blue-hover;
-		border: $blue-hover;
+		border: 2px solid $blue-hover;
 	}
 
 	.button-danger {
 		background-color: $red;
-		border: $red;
+		border: 2px solid $red;
 		&.button-outline {
 			background-color: transparent;
 			color: $red;
@@ -54,20 +56,22 @@ $black-hover: #13161a;
 		&.button-faded {
 			background-color: rgba($color: $red, $alpha: 0.1);
 			color: $red;
+			border: none;
 			&:hover {
 				color: #fff;
+				border: none;
 			}
 		}
 	}
 
 	.button-danger:hover {
 		background-color: $red-hover;
-		border: $red-hover;
+		border: 2px solid $red-hover;
 	}
 
 	.button-success {
 		background-color: $green;
-		border: $green;
+		border: 2px solid $green;
 		&.button-outline {
 			background-color: transparent;
 			color: $green;
@@ -79,20 +83,22 @@ $black-hover: #13161a;
 		&.button-faded {
 			background-color: rgba($color: $green, $alpha: 0.1);
 			color: $green;
+			border: none;
 			&:hover {
 				color: #fff;
+				border: none;
 			}
 		}
 	}
 
 	.button-success:hover {
 		background-color: $green-hover;
-		border: $green-hover;
+		border: 2px solid $green-hover;
 	}
 
 	.button-warning {
 		background-color: $yellow;
-		border: $yellow;
+		border: 2px solid $yellow;
 		color: black;
 		&.button-outline {
 			background-color: transparent;
@@ -105,20 +111,22 @@ $black-hover: #13161a;
 		&.button-faded {
 			background-color: rgba($color: $yellow, $alpha: 0.1);
 			color: $yellow;
+			border: none;
 			&:hover {
 				color: $black;
+				border: none;
 			}
 		}
 	}
 
 	.button-warning:hover {
 		background-color: $yellow-hover;
-		border: $yellow-hover;
+		border: 2px solid $yellow-hover;
 	}
 
 	.button-default {
 		background-color: $black;
-		border: $black;
+		border: 2px solid $black;
 		&.button-outline {
 			background-color: transparent;
 			color: $black;
@@ -130,15 +138,17 @@ $black-hover: #13161a;
 		&.button-faded {
 			background-color: rgba($color: $black, $alpha: 0.1);
 			color: $black;
+			border: none;
 			&:hover {
 				color: #fff;
+				border: none;
 			}
 		}
 	}
 
 	.button-default:hover {
 		background-color: $black-hover;
-		border: $black-hover;
+		border: 2px solid $black-hover;
 	}
 
 	.button-large {
@@ -146,9 +156,19 @@ $black-hover: #13161a;
 	}
 
 	.button-icon {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		align-items: center;
+		border: none;
+		padding: none;
+		width: 46px;
+		height: 46px;
+		padding: 0;
+		border-radius: 2px;
+		img {
+			width: 16px;
+			height: 15px;
+			padding: 0;
+		}
+		&:hover {
+			border: none;
+		}
 	}
 }

@@ -1,137 +1,137 @@
 .form-container {
-	width: 300px;
-	height: 66px;
-	font-size: 14px;
-	position: relative;
+  width: 300px;
+  height: 66px;
+  font-size: 14px;
+  position: relative;
 }
 
 .form-container input {
-	border: 2px solid #f1f3f4;
-	border-radius: 4px;
-	width: 100%;
-	height: 46px;
-	margin-top: 5px;
+  border: 2px solid #f1f3f4;
+  border-radius: 4px;
+  width: 100%;
+  height: 46px;
+  margin-top: 5px;
 }
 
 .form-container input::-webkit-input-placeholder {
-	font-size: 16px;
-	padding: 0 10px;
+  font-size: 16px;
+  padding: 0 10px;
 }
 
 .form-container input:-ms-input-placeholder {
-	font-size: 16px;
-	padding: 0 10px;
+  font-size: 16px;
+  padding: 0 10px;
 }
 
 .form-container input::-ms-input-placeholder {
-	font-size: 16px;
-	padding: 0 10px;
+  font-size: 16px;
+  padding: 0 10px;
 }
 
 .form-container input::placeholder {
-	font-size: 16px;
-	padding: 0 10px;
+  font-size: 16px;
+  padding: 0 10px;
 }
 
 .form-container select {
-	width: 300px;
-	height: 46px;
-	font-size: 14px;
-	background-color: transparent;
-	border: 2px solid #f1f3f4;
+  width: 300px;
+  height: 46px;
+  font-size: 14px;
+  background-color: transparent;
+  border: 2px solid #f1f3f4;
 }
 
 .form-container .submit-container {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-	width: 300px;
-	height: 46px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 300px;
+  height: 46px;
 }
 
 .form-container .submit-container input {
-	height: 46px;
-	width: 184px;
-	padding: 0;
-	margin: 0;
-	border-width: 1px;
-	border-radius: 2px 0 0 2px;
+  height: 44px;
+  width: 184px;
+  padding: 0;
+  margin: 0;
+  border-width: 1px;
+  border-radius: 2px 0 0 2px;
 }
 
 .form-container .submit-container button {
-	height: 46px;
-	width: 118px;
-	margin: 0;
-	padding: 0;
-	border: 5px solid inherit;
-	border-radius: 0 2px 2px 0;
+  height: 46px;
+  width: 118px;
+  margin: 0;
+  padding: 0;
+  border: 5px solid inherit;
+  border-radius: 0 2px 2px 0;
 }
 
 .form-container.form-small {
-	height: 58px;
+  height: 58px;
 }
 
 .form-container.form-small input {
-	height: 38px;
+  height: 38px;
 }
 
 .form-container.form-small input::-webkit-input-placeholder {
-	font-size: 14px;
-	padding: 0 10px;
+  font-size: 14px;
+  padding: 0 10px;
 }
 
 .form-container.form-small input:-ms-input-placeholder {
-	font-size: 14px;
-	padding: 0 10px;
+  font-size: 14px;
+  padding: 0 10px;
 }
 
 .form-container.form-small input::-ms-input-placeholder {
-	font-size: 14px;
-	padding: 0 10px;
+  font-size: 14px;
+  padding: 0 10px;
 }
 
 .form-container.form-small input::placeholder {
-	font-size: 14px;
-	padding: 0 10px;
+  font-size: 14px;
+  padding: 0 10px;
 }
 
 .form-container.form-small select {
-	width: 200px;
-	height: 38px;
+  width: 200px;
+  height: 38px;
 }
 
 .form-container.form-large {
-	height: 80px;
+  height: 80px;
 }
 
 .form-container.form-large input {
-	height: 60px;
+  height: 60px;
 }
 
 .form-container.form-large select {
-	width: 300px;
-	height: 60px;
+  width: 300px;
+  height: 60px;
 }
 
 .form-container.form-large .submit-container {
-	width: 369px;
-	height: 60px;
+  width: 369px;
+  height: 60px;
 }
 
 .form-container.form-large .submit-container input {
-	height: 60px;
-	width: 251px;
+  height: 56px;
+  width: 251px;
 }
 
 .form-container.form-large .submit-container button {
-	height: 60px;
-	width: 118px;
+  height: 58px;
+  width: 118px;
 }
 
 .form-container.form-faded select {
-	background-color: #fafafb;
+  background-color: #fafafb;
 }
 /*# sourceMappingURL=Form.css.map */

@@ -21,7 +21,9 @@ const Button = (props) => {
 		classList += " button-red";
 	}
 	if (props.icon) {
-		classList += " button-icon";
+		if (props.icon && props.label) {
+			classList += " button-icon-text";
+		} else classList += " button-icon";
 	}
 	return (
 		<div className="button-container">
