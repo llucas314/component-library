@@ -4,7 +4,7 @@ The purpose of this repository was create a component library from a mockup.
 
 ## Website
 
-[Component Library](https://trusting-shirley-06f0a4.netlify.com)
+[Component Library](https://reactcomponent-library.netlify.com/)
 
 ## Screenshots
 
